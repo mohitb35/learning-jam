@@ -1,0 +1,155 @@
+/* You can also use normalize/reset.css */
+
+/* RESET */
+* {
+	margin: 0;
+	padding: 0
+}
+
+/* GLOBAL STYLES */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	background-color: #F2EC91;
+}
+
+button {
+	border: 0;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	font-size: 1rem;
+	width: 150px;
+	max-width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 80%;
+}
+
+button:hover.disabled {
+	opacity: 100%;
+	cursor: not-allowed;
+}
+
+.red {
+	background-color: #c13828;
+	color: #FFF;
+}
+
+.green {
+	background-color: #008000;
+	color: #FFF;
+}
+
+.disabled {
+	background-color: grey;
+	color: #FFF;
+}
+
+.none {
+	display: none;
+}
+
+a{
+	color: #000000;
+}
+
+/* LAYOUT */
+.wrapper {
+	max-width: 1000px;
+	min-width: 70%;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+/* HEADER */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgb(234, 227, 97);
+	height: 70px;
+	margin-bottom: 1rem;
+}
+
+/* CONTENT */
+.content h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+/* CARDS */
+.content ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0.5rem;
+	width: auto;
+}
+
+.content ul li {
+	list-style: none;
+	background: rgb(251, 244, 213);
+	/* flex-basis: 220px; */
+	margin-bottom: 1rem;
+	/* margin-left: 0.5rem; */
+	text-align: center;
+	padding: 1.25rem; 
+	margin: 0.5rem;
+}
+
+.content ul li h3 {
+	margin: 0.5rem 0;
+}
+
+.content ul li p {
+	margin-bottom: 0.5rem;
+}
+
+
+/* LINKS */
+.links {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+/* CART */
+.totalCost {
+	text-align: center;
+}
+
+/* FORM */
+.content form {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1rem 1rem 1rem;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 0.2rem;
+}
+
+.content form input {
+	margin-bottom: 0.5rem;
+}
+
+.content form textarea {
+	margin-bottom: 0.7rem;
+}
+
+/* ORDER */
+.order-status {
+	text-align: center;
+}
+
+.order-status h3 {
+	margin: 2rem 0 0.5rem 0;
+}
