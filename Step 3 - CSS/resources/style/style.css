@@ -49,12 +49,16 @@ button:hover.disabled {
 	color: #FFF;
 }
 
-.none {
+/* .none {
 	display: none;
-}
+} */
 
 a{
 	color: #000000;
+}
+
+.content section {
+	margin-bottom: 1.5rem;
 }
 
 /* LAYOUT */
